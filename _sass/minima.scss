@@ -43,6 +43,10 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+// Overwritten by me.
+// $background-color: #111;
+// $text-color:       #eee;
+
 // Import partials.
 @import
   "minima/base",
