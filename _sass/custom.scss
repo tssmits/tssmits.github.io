@@ -1,0 +1,24 @@
+.link-with-image-and-subtitle {
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 2;
+
+    a {
+        position: relative;
+        text-align: center;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .subtitle {
+            display: block;
+        }
+    }
+}
+
+.post-content {
+    h2, h3, h4, h5, h6 {
+        margin-top: $spacing-unit;
+    }
+}
