@@ -2,6 +2,7 @@
 layout: post
 title:  "First Post"
 categories: other
+slug: first-post
 ---
 This is the very first post of this website and I'm very excited about it.
 

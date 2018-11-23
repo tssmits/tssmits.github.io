@@ -8,6 +8,7 @@ tags:
 - coderetreat
 - conscious growth
 - pair programming
+slug: delete-my-code
 ---
 What happens when you delete all the code you have ever written?
 

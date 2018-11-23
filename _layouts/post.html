@@ -27,13 +27,41 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-<form method="POST" action="https://tssmits-github-io-staticman.herokuapp.com/v2/entry/tssmits/tssmits.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="https://www.thijssmits.com">
-  <!-- e.g. "2016-01-02-this-is-a-post" -->
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-  <label><input name="fields[name]" type="text">Name</label>
-  <label><input name="fields[email]" type="email">E-mail</label>
-  <label><textarea name="fields[message]"></textarea>Message</label>
-  
-  <button type="submit">Go!</button>
-</form>
+<h2 id="leave-a-comment" class="title--leave-a-comment">Leave a comment</h2>
+
+<div class="comment-form">
+  <form method="post" action="https://tssmits-github-io-staticman.herokuapp.com/v2/entry/tssmits/tssmits.github.io/master/comments">
+    <input name="options[redirect]" type="hidden" value="{{ page.url | prepend: 'https://www.thijssmits.com' }}">
+    <!-- e.g. "2016-01-02-this-is-a-post" -->
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <div class="form-field">
+      <label><span class="text">Name</span><br><input name="fields[name]" type="text"></label>
+    </div>
+    <div class="form-field">
+      <label><span class="text">E-mail</span><br><input name="fields[email]" type="email"></label>
+    </div>
+    <div class="form-field">
+      <label><span class="text">Message</span><br><textarea name="fields[message]" row="8" cols="40"></textarea></label>
+    </div>
+    
+    <button type="submit">Go!</button>
+  </form>
+</div>
+
+<h2 id="comments" class="title--comments">Comments</h2>
+
+<div class="comments">
+  {% assign comments = site.data.comments[page.slug] %}
+  {% if comments %}
+    {% for comment in comments sorted reversed %}
+      {% assign commentData = comment[1] %}
+        <div>
+          {{ commentData.message }}</br>
+          From: {{ commentData.name }}</br>
+          {{ commentData.date | date_to_long_string }}
+        </div>
+    {% endfor %}
+  {% else %}
+    <div class="no-comments">No comments yet.</div>
+  {% endif %}
+</div>
