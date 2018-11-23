@@ -53,7 +53,8 @@ layout: default
 <div class="comments">
   {% assign comments = site.data.comments[page.slug] %}
   {% if comments %}
-    {% for comment in comments sorted reversed %}
+    {% assign comments = comments | sort %}
+    {% for comment in comments reversed %}
       {% assign commentData = comment[1] %}
         <div>
           {{ commentData.message }}</br>
