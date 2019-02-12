@@ -10,7 +10,7 @@ slug: ksoc-do-refactor
 ---
 How to get to that pesky "Do Refactor" button with the keyboard?
 
-Welcome to today's edition of the **Keyboard Shortcut Appreciation Society** (KSoc (or KSAS (which my mind renders into "kiss-ass" hehe))).
+Welcome to today's edition of the **Keyboard Shortcut Appreciation Society** (KSoc (or KSAS)).
 
 ## Do Refactor
 
