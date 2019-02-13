@@ -9,6 +9,8 @@ tags:
 - conscious growth
 - pair programming
 slug: delete-my-code
+description: >-
+  What happens when you delete all the code you have ever written?
 ---
 What happens when you delete all the code you have ever written?
 

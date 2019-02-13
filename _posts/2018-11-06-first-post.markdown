@@ -3,6 +3,8 @@ layout: post
 title:  "First Post"
 categories: other
 slug: first-post
+description: >-
+  This is the very first post of this website and I'm very excited about it.
 ---
 This is the very first post of this website and I'm very excited about it.
 

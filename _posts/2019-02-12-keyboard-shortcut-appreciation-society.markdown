@@ -7,6 +7,8 @@ tags:
 - keyboard shortcuts
 - pycharm
 slug: ksoc-do-refactor
+description: >-
+  How to get to that pesky "Do Refactor" button with the keyboard?
 ---
 How to get to that pesky "Do Refactor" button with the keyboard?
 
