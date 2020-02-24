@@ -8,6 +8,7 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  
   <!-- Matomo -->
   <script type="text/javascript">
     var _paq = window._paq || [];
@@ -15,7 +16,7 @@
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
-      var u="//172.18.0.2/";
+      var u="//alecta.server.thijssmits.com/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
       _paq.push(['setSiteId', '1']);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
